@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space mono", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;    /* Rolagem suave do mouse */
+}
+
+/*
+    Cores pré definidas
+============================
+*/
+:root {
+    --primaria: #eead2b;
+    --secundaria: #7c3aed;
+    --escuro: #201e26;
+    --maisEscuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: rgba(255, 255, 255, 0.1);
+    --fundoNav: rgba(16, 17, 20, 0.8);
+    --titulos: #eead2b;
+}
+
+/*
+    Configurações do Body
+============================
+*/
+body {
+    background-color: var(--escuro);
+    color: var(--claro);
+}
+
+h1, h2, h3 {
+    color: var(--titulos);
+}
+
+/*
+    Configurações do Nav
+============================
+*/
+.navegacao {
+    position: fixed;
+    top: 0;
+    background: var(--fundoNav);
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--claro);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.menu-link::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    transition: width 0.5s ease;
+}
+
+.menu-link:hover::after {
+    width: 100%;
+}
+
+/*
+    Configurações do Nav
+============================
+*/
