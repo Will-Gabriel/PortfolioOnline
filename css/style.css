@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Space mono", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Space Mono", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -16,12 +18,12 @@ html {
 */
 :root {
     --primaria: #eead2b;
-    --secundaria: #7c3aed;
+    --secundaria: #561abd;
     --escuro: #201e26;
     --maisEscuro: #0a0f1c;
     --claro: #e2e8f0;
     --vidro: rgba(255, 255, 255, 0.1);
-    --fundoNav: rgba(16, 17, 20, 0.8);
+    --fundoNav: rgba(12, 13, 15, 0.918);
     --titulos: #eead2b;
 }
 
