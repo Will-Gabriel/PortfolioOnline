@@ -135,7 +135,6 @@ h1 {
 
 /* ========= Configurações do Section Projetos ========= */
 .projetos {
-    min-height: 100vh;
     padding: 6rem 2rem;
 }
 
@@ -186,6 +185,27 @@ h1 {
 }
 
 /* ========= Configurações do Section Contato ========= */
-#contato {
+.contatos {
     min-height: 100vh;
 }
+
+.contato-titulo {
+    
+}
+
+.formulario-contato {
+
+}
+
+.campo-form {
+
+}
+
+.nome-form {
+
+}
+
+.text-form {
+
+}
+
