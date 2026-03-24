@@ -7,15 +7,11 @@
     font-family: "Space Mono", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 html {
     scroll-behavior: smooth;    /* Rolagem suave do mouse */
 }
 
-/*
-    Cores pré definidas
-============================
-*/
+/* Cores pré definidas  */
 :root {
     --primaria: #eead2b;
     --secundaria: #561abd;
@@ -28,10 +24,7 @@ html {
     --background-card: rgba(238, 173, 43, 0.5);
 }
 
-/*
-    Configurações do Body
-============================
-*/
+/* ========= Configurações do Body ========= */
 body {
     background-color: var(--escuro);
     color: var(--claro);
@@ -41,10 +34,7 @@ h1, h2, h3 {
     color: var(--primaria);
 }
 
-/*
-    Configurações do Nav
-============================
-*/
+/* ========= Configurações do Nav ========= */
 .navegacao {
     position: fixed;
     top: 0;
@@ -85,10 +75,7 @@ h1, h2, h3 {
     width: 100%;
 }
 
-/*
-    Configurações do Main
-============================
-*/
+/* ========= Configurações do Main ========= */
 .cabecalho {
     min-height: 100vh;
     display: flex;
@@ -117,10 +104,7 @@ h1 {
     color: var(--claro);
 }
 
-/*
-    Configurações do Section Sobre
-============================
-*/
+/* ========= Configurações do Section Sobre ========= */
 .sobre {
     padding: 6rem 2rem;
     min-height: 100vh;
@@ -149,10 +133,7 @@ h1 {
 }
 
 
-/*
-    Configurações do Section Projetos
-============================
-*/
+/* ========= Configurações do Section Projetos ========= */
 .projetos {
     min-height: 100vh;
     padding: 6rem 2rem;
@@ -204,7 +185,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-
+/* ========= Configurações do Section Contato ========= */
 #contato {
     min-height: 100vh;
 }
