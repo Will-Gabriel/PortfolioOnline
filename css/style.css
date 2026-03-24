@@ -24,7 +24,8 @@ html {
     --claro: #e2e8f0;
     --vidro: rgba(255, 255, 255, 0.1);
     --fundoNav: #111111;
-    --titulos: #eead2b;
+    --backgroud: rgba(255, 255, 255, 0.05);
+    --background-card: rgba(238, 173, 43, 0.5);
 }
 
 /*
@@ -75,7 +76,8 @@ h1, h2, h3 {
     position: absolute;
     bottom: 0;
     left: 0;
-    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    /* background: linear-gradient(90deg, var(--primaria), var(--secundaria)); */
+    background: linear-gradient(90deg, var(--primaria));
     transition: width 0.5s ease;
 }
 
@@ -98,9 +100,9 @@ h1, h2, h3 {
 .foto-perfil {
     width: 350px;
     height: 350px;
-    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+    box-shadow: 0 0 20px var(--background-card);
     border-radius: 50%;
-    border: 4px solid var(--vidro);
+    /* border: 4px solid var(--vidro); */
 }
 
 h1 {
@@ -119,4 +121,90 @@ h1 {
     Configurações do Section Sobre
 ============================
 */
+.sobre {
+    padding: 6rem 2rem;
+    min-height: 100vh;
+}
 
+.sobre-titulo {
+    font-size: 3rem;
+    color: var(--primaria);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre-caixa {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);
+    background: var(--backgroud);
+}
+
+.sobre-paragrafo{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+
+/*
+    Configurações do Section Projetos
+============================
+*/
+.projetos {
+    min-height: 100vh;
+    padding: 6rem 2rem;
+}
+
+.projetos-titulo {
+    text-align: center;
+    color: var(--primaria);
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.projetos-caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projetos-card {
+    background: var(--backgroud);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--vidro);
+    overflow: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.projetos-card:hover {
+    box-shadow: 0 10px 20px var(--background-card);
+    transform: translateY(-10px) scale(1.05);
+}
+
+.projetos-imagem {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.caixa-textos-projeto {
+    padding: 1.5rem;
+}
+
+.info-projetos {
+    color: var(--primaria);
+    line-height: 1.25rem;
+    margin-bottom: 10px;
+}
+
+
+#contato {
+    min-height: 100vh;
+}
