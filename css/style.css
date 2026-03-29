@@ -14,7 +14,8 @@ html {
 /* Cores pré definidas  */
 :root {
     --primaria: #eead2b;
-    --secundaria: #561abd;
+    --secundaria: #d46220;
+    /* --secundaria: #561abd; */
     --escuro: #1f1f1f;
     --maisEscuro: #111111;
     --claro: #e2e8f0;
@@ -66,8 +67,8 @@ h1, h2, h3 {
     position: absolute;
     bottom: 0;
     left: 0;
-    /* background: linear-gradient(90deg, var(--primaria), var(--secundaria)); */
-    background: linear-gradient(90deg, var(--primaria));
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    /* background: linear-gradient(90deg, var(--primaria)); */
     transition: width 0.5s ease;
 }
 
@@ -186,26 +187,74 @@ h1 {
 
 /* ========= Configurações do Section Contato ========= */
 .contatos {
+    padding: 6rem 2rem;
     min-height: 100vh;
 }
 
 .contato-titulo {
-    
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.contato-caixa {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contato-paragrafo {
+    text-align: center;
+    font-size: 1.1rem;
 }
 
 .formulario-contato {
-
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--backgroud);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border: 1px solid var(--vidro);
+    border-radius: 16px;
 }
 
 .campo-form {
-
+    width: 100%;
+    padding: 1rem;
+    background: var(--backgroud);
+    border: 1px solid var(--vidro);
+    border-radius: 8px;
+    color: var(--claro);
+    outline: none;
 }
 
-.nome-form {
-
+.campo-form:focus {
+    border-color: var(--primaria);
+    box-shadow: 0 0 5px var(--primaria);
 }
 
-.text-form {
-
+.grupo-form {
+    margin-bottom: 1.5rem;
 }
 
+.botao-form {
+    color: var(--claro);
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.5s ease;
+    font-size: 1rem;
+}
+
+.botao-form:hover {
+    transform: translateY(-4px);
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+    width: 100%;
+}
