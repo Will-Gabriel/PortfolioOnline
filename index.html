@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="caminho/imagem.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+
     <!-- Nav - Menu principal -->
     <nav class="navegacao">
         <ul class="menu">
@@ -23,19 +26,17 @@
     <main id="inicio" class="cabecalho">
         <img class="foto-perfil" src="./img/imagem1.jpg" alt="Foto de perfil">
         <h1>Wilian Gabriel</h1>
-        <p class="cabecalho-subtitulo">Analista de Dados e Desenvolvedor Java</p>
+        <p class="cabecalho-subtitulo">Analista de Dados Junior e Desenvolvedor Java</p>
     </main><!-- // Fim Main - Conteúdo inicial -->
 
     <!-- Section - Sobre mim -->
     <section id="sobre" class="sobre">
         <h2 class="sobre-titulo">Sobre mim</h2>
         <div class="sobre-caixa">
-            <p class="sobre-paragrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, modi nobis.
-                Consequuntur aut odit aperiam! Labore officia magnam possimus nulla vitae ea, aperiam velit
-                consequuntur? Libero inventore laboriosam voluptates id?</p>
+            <p class="sobre-paragrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, modi nobis. Consequuntur aut odit aperiam! Labore officia magnam possimus nulla vitae ea, aperiam velit consequuntur? Libero inventore laboriosam voluptates id?</p>
         </div>
     </section><!-- // Fim Section - Sobre mim -->
-
+    
     <!-- Section - Projetos -->
     <section id="projetos" class="projetos">
         <h2 class="projetos-titulo">Projetos</h2>
@@ -45,7 +46,9 @@
                 <div class="caixa-textos-projeto">
                     <h3 class="info-projetos">Projeto 1</h3>
                     <p class="paragrafo-projetos">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <a href="https://github.com/Will-Gabriel" target="_blank">GitHub</a>
+                    <div class="caixa-link-projeto">
+                        <a class="link-projetos" href="https://github.com/Will-Gabriel" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
                 </div>
             </div>
 
@@ -54,6 +57,9 @@
                 <div class="caixa-textos-projeto">
                     <h3 class="info-projetos">Projeto 2</h3>
                     <p class="paragrafo-projetos">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <div class="caixa-link-projeto">
+                        <a class="link-projetos" href="https://github.com/Will-Gabriel" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
                 </div>
             </div>
 
@@ -62,6 +68,9 @@
                 <div class="caixa-textos-projeto">
                     <h3 class="info-projetos">Projeto 3</h3>
                     <p class="paragrafo-projetos">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <div class="caixa-link-projeto">
+                        <a class="link-projetos" href="https://github.com/Will-Gabriel" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
                 </div>
             </div>
 
@@ -70,6 +79,9 @@
                 <div class="caixa-textos-projeto">
                     <h3 class="info-projetos">Projeto 4</h3>
                     <p class="paragrafo-projetos">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <div class="caixa-link-projeto">
+                        <a class="link-projetos" href="https://github.com/Will-Gabriel" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
                 </div>
             </div>
 
@@ -78,6 +90,9 @@
                 <div class="caixa-textos-projeto">
                     <h3 class="info-projetos">Projeto 5</h3>
                     <p class="paragrafo-projetos">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <div class="caixa-link-projeto">
+                        <a class="link-projetos" href="https://github.com/Will-Gabriel" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
                 </div>
             </div>
 
@@ -86,6 +101,9 @@
                 <div class="caixa-textos-projeto">
                     <h3 class="info-projetos">Projeto 6</h3>
                     <p class="paragrafo-projetos">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <div class="caixa-link-projeto">
+                        <a class="link-projetos" href="https://github.com/Will-Gabriel" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,33 +112,7 @@
     <section id="contatos" class="contatos">
         <h2 class="contato-titulo">Entre em Contato</h2>
         <div class="contato-caixa">
-            <p class="contato-paragrafo">Se você precisa organizar dados, criar dashboards ou automatizar processos,
-                entre em contato comigo.</p>
-        </div>
-        <form id="formulario" class="formulario-contato">
-            <div class="grupo-form">
-                <input class="campo-form" type="text" placeholder="Nome">
-            </div>
-
-            <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua mensagem"></textarea>
-            </div>
-
-            <button class="botao-form" type="submit">Enviar mensagem</button>
-        </form>
-
-        <h3>Outros meios de comunicação</h3>
-        <div class="contato-cards">
-            <span><a href="">Enviar E-mail</a></span>
-        </div>
-        <div class="contato-cards">
-            <span><a href="">WhatsApp</a></span>
-        </div>
-        <div class="contato-cards">
-            <span><a href="">LinkedIn</a></span>
-        </div>
-        <div class="contato-cards">
-            <span><a href="">GitHub</a></span>
+            <p class="contato-paragrafo">Se você precisa organizar dados, criar dashboards ou automatizar processos, entre em contato comigo.</p>
         </div>
     </section>
 </body>
